@@ -1,8 +1,8 @@
 def payload_create_booking():
     payload={
-    "firstname" : "Perumal",
+    "firstname" : "Vijay",
     "lastname" : "K A",
-    "totalprice" : 145,
+    "totalprice" : 148,
     "depositpaid" : True,
     "bookingdates" : {
         "checkin" : "2024-01-01",

@@ -27,5 +27,9 @@ We use Restful booker since it allows most of the HTTP methods.
 ## how to run locally and see report?
 `pytest TEST_SCRIPTS -s -v --html==report.html`
 
+## to run TC parallely
+`pytest -n auto TEST_SCRIPTS/Integration_tests/Parallel -s -v
+`
+
 
 ## How to run via jenkins?
