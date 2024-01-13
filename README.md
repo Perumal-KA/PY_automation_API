@@ -23,6 +23,8 @@ We use Restful booker since it allows most of the HTTP methods.
 ## packages to be installed
 ` pip install requests pytest pytest-html faker allure-pytest jsonschema `
 ` pip install requirements.txt`
+
+## how to run locally and see report?
 `pytest TEST_SCRIPTS -s -v --html==report.html`
 
 

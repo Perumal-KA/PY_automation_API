@@ -8,3 +8,7 @@ def get_payload_auth():
     data=json.loads(file_data)  #json.loads---> parse a valid json string to python dictionary
     file_data.close()
     return data
+
+def common_header():
+    headers={"Content-Type": "application/json"}
+    return headers
