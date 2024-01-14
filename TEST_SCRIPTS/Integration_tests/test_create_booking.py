@@ -14,7 +14,7 @@ from SOURCE.Constants.apiconstants import url_create_booking
 from SOURCE.Helpers.api_wrapper import post_request
 from SOURCE.Helpers.payload_manager import payload_create_booking
 from SOURCE.Helpers.utils import common_header
-from SOURCE.Helpers.common_verification import *
+from SOURCE.Helpers.common_verification import*
 
 
 class Testintegration(object):
