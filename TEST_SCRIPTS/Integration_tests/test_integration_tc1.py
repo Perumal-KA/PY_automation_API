@@ -1,6 +1,5 @@
 import pytest
 import requests
-import allure
 import json
 
 from SOURCE.Constants.apiconstants import url_create_booking,url_create_token,url_update_booking,url_delete_booking,url_get_booking
