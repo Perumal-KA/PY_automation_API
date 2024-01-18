@@ -28,7 +28,16 @@ We use Restful booker since it allows most of the HTTP methods.
 `pytest TEST_SCRIPTS -s -v --html==report.html`
 
 ## to run TC parallely
-`pytest -n auto TEST_SCRIPTS/Integration_tests/Parallel -s -v
+How to run parallel test
+
+Step1: pip install pytest-xdist
+
+Step2: use below cmd to execute the script in parallel.
+
+Path - TEST_SCRIPTS/Integration_tests/Parallel/test_parallel.py
+
+-n auto - runs the tests by using separate workers for each function. This is faster, since it distribute tests across multiple CPU's to speed up test execution. `pytest -n auto TEST_SCRIPTS/Integration_tests/Parallel/test_parallel.py -s -v`
+-n 2 - takes up 2 random function 1st and execute then takes up another 2 random functions pytest `-n 2 TEST_SCRIPTS/Integration_tests/Parallel/test_parallel.py -s -v`
 `
 
 
