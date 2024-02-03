@@ -40,5 +40,9 @@ Path - TEST_SCRIPTS/Integration_tests/Parallel/test_parallel.py
 -n 2 - takes up 2 random function 1st and execute then takes up another 2 random functions pytest `-n 2 TEST_SCRIPTS/Integration_tests/Parallel/test_parallel.py -s -v`
 `
 
+## how to create allure report
 
+1. Add allure pytest in your project(Install node.js)
+2. Mark TC's with @allure.feature("Description)
+3. If you run on jenkins, just set your path, Jenkins automatically generate allure report since it has allure plug-in.
 ## How to run via jenkins?
