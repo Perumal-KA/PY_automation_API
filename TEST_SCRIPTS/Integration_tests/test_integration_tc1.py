@@ -13,7 +13,7 @@ token=None
 
 class Test_Integration(object):
 
-   @allure.feature("Verify create new token")
+
    @pytest.mark.smoke
    def test_create_new_token(self):
         global token
@@ -23,7 +23,7 @@ class Test_Integration(object):
         token = response.json()["token"]
         verify_token(token)
 
-   @allure.feature("verify post booking")
+
    @pytest.mark.smoke
    def test_create_post_booking(self):
         global booking_id
@@ -34,7 +34,7 @@ class Test_Integration(object):
         verify_key(booking_id)
         return booking_id
 
-   @allure.feature("verify update booking")
+
    @pytest.mark.smoke
    def test_update_booking(self):
         response=patch_request(url_update_booking(booking_id),headers=headers_withToken(token),auth=None,payload=payload_updateAllData_booking(),in_json=False)
@@ -46,14 +46,14 @@ class Test_Integration(object):
 
 
 
-   @allure.feature("verify delete booking")
+
    @pytest.mark.smoke
    def test_delete_booking(self):
         response=delete_request(url=url_delete_booking(booking_id),headers=headers_withToken(token),auth=None,in_json=False)
         verify_http_code(response,201)
         print(response.status_code)
 
-   @allure.feature("verify invalid response while fetching deleted ID" )
+
    @pytest.mark.smoke
    def test_get_updated_booking(self):
         response=get_request(url_get_booking(booking_id),auth=None,in_json=False)
